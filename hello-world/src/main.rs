@@ -1,4 +1,11 @@
+mod formatting;
+mod debug;
+mod display;
+mod list;
+
 fn main() {
-    println!("Hello, world!");
-    println!("My name is Bryan");
+    formatting::format_print();
+    debug::debug_print();
+    display::display_print();
+    list::list_print();
 }
