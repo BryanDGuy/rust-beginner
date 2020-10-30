@@ -18,4 +18,23 @@ fn main() {
 
     // Pad numbers with extra zeros.
     println!("{number:>0width$}", number=1, width=6);
+
+    // *** Activities *** //
+
+    println!("My name is {0}, {1} {0}", "Bond", "James");
+    // FIXME ^ Add the missing argument: "James"
+
+    #[allow(dead_code)]
+    struct Structure(i32);
+    // println!("This struct `{}` won't print...", Structure(3));
+    // FIXME ^ Comment out this line.
+
+    println!("Pi is roughly {pi:.prec$}", pi = 3.141592, prec = 3);
+    /*
+        Add a println! macro that prints: Pi is roughly 3.142 by
+        controlling the number of decimal places shown. For the purposes
+        of this exercise, use let pi = 3.141592 as an estimate for pi.
+        (Hint: you may need to check the std::fmt documentation for
+        setting the number of decimals to display)
+    */
 }
